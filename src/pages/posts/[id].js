@@ -16,7 +16,8 @@ export default function post() {
         (res) => res.json().then((data) => setComment(data))
       );
     }
-  }, []);
+  }, [query]);
+
   return (
     <>
       {post && (
