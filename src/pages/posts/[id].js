@@ -30,7 +30,7 @@ export default function post() {
       <h2>Comments</h2>
       {comment.length
         ? comment.map((each) => (
-            <div>
+            <div key={each.id}>
               {each.name}, {each.email} <p>{each.body}</p>
               <hr />
             </div>
